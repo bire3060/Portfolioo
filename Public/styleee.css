@@ -1,0 +1,179 @@
+.white {
+    width: 375px;
+  }
+  .point {
+    width: 375px;
+    height: 220px;
+    overflow: hidden;
+  }
+  input[type=text]{
+      width:50%;
+  }
+
+
+
+ 
+  @media (max-width: 400px) {
+    .white {
+      width: 300px;
+    }
+    .point {
+      width: 300px;
+    }
+  }
+  .point:hover img {
+    transform: scale(1.5);
+  }
+  .point img {
+    transition: all 0.5s ease-in-out;
+  }
+  @keyframes move {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .toggle1 {
+    animation: move 0.7s ease-in-out 1 alternate;
+  }
+
+  .img {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+
+    border-radius: 150px;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  .nav-content-toggle {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .nav-content {
+    transition: all 0.5s ease-in-out;
+  }
+  .mcontainer {
+    background: rgba(0, 0, 0, 0.9) url("../img/office.webp");
+    background-size: cover;
+    background-blend-mode: darken;
+
+    color: white;
+  }
+  .navBlackWhite-toggle {
+    background-color:  rgba(229, 231, 235);
+    color: black;
+    transition: all 0.5s ease-in-out;
+  }
+  .line {
+    width: 5px;
+    background-color: white;
+    animation: blinkk 0.4s ease-in-out infinite;
+  }
+  @keyframes blinkk {
+    0% {
+      opacity: 1;
+    }
+    40% {
+      opacity: 1;
+    }
+    60% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  .line-app-disapp {
+    display: none;
+  }
+  .home {
+    transition: all 0.5s ease-in;
+  }
+  @media (max-width: 700px) {
+    .home:hover {
+      background-color: red;
+      color: white;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .home {
+      position: relative;
+    }
+    .home::after {
+      position: absolute;
+      content: "";
+      width: 0;
+      bottom: 0;
+      left: 0;
+      height: 5px;
+      background-color: red;
+
+      transition: all 0.8s ease-in-out;
+    }
+    .home:hover::after {
+      width: 30px;
+    }
+  }
+
+  .upEffects:hover {
+    animation: upEffectss 0.5s ease-in-out 2 alternate;
+  }
+
+  @keyframes upEffectss {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-15px);
+    }
+  }
+  .round {
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    border: 1px solid black;
+    cursor: pointer;
+  }
+
+  /* @keyframes burger {
+    0% {
+      opacity: 0;
+      height: 0px;
+      margin-bottom: 10px;
+    }
+
+    100% {
+      opacity: 1;
+
+      height: 240px;
+      margin-bottom: 50px;
+    }
+  } */
+
+  @media (max-width: 767px) {
+    #nav {
+      background-color: black;
+      color: white;
+    }
+  }
+
+  @media (max-width: 1022px) {
+  }
+  #first {
+    padding-top: 250px;
+    height: 600px;
+  }
+  @media (min-width: 1023px) {
+    #first {
+      padding-top: 250px;
+      height: 700px;
+    }
+  }

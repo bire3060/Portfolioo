@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="tailwind.css" />
+    <script
+      src="https://kit.fontawesome.com/25e08679e8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styleee.css" />
+  </head>
+  <body class="font-nunito">
+    <!-- for navigation menuu -->
+    <nav
+      class="
+        md:flex
+        md:items-center
+        px-2
+        md:px-12
+        lg:px-28
+        bg-black
+        text-white
+        items-center
+        md:p-6
+        p-6
+        fixed
+        top-0
+        w-full
+        transition
+        ease-in-out
+        duration-500
+      "
+      id="nav"
+    >
+      <!-- for hamburger -->
+      <!-- for titlee -->
+      <div
+        class="
+          w-1/2
+          sm:1/4
+          text-2xl
+          lg:text-4xl
+          font-extrabold
+          tracking-wider
+          text-center
+          -mt-2
+          md:mt-2
+          lg:mt-0
+          cursor-pointer
+          sm:-ml-20
+          md:-ml-28
+        "
+      >
+        Biraj Chhetri
+      </div>
+      <div class="absolute right-0 top-4 md:hidden" id="menu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-8 w-12 md:hidden"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </div>
+      <div class="absolute right-0 top-4 hidden crossDel" id="delete-menu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-8 w-10"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </div>
+      <!-- for subNav -->
+      <section
+        class="
+          md:flex-1
+          md:justify-center
+          space-y-2
+          md:space-y-0
+          hidden
+          lg:space-x-7
+          md:ml-2
+          md:flex
+          md:space-x-4
+          w-full
+          text-center
+          lg:ml-60
+          text-xl
+          nav-content
+          transition
+          duration-500
+          ease-in-out
+          items-center
+          toggle2
+        "
+        id="burger-opacity"
+      >
+        <div class="home"><a href="#">Home</a></div>
+        <div class="home"><a href="#aboutUs">About</a></div>
+        <div class="home"><a href="#services">Service</a></div>
+       
+        <div class="home">
+          <a href="#testominal">Testominal</a>
+        </div>
+        <div class="home md:hiden lg:block"><a href="#blog">Blog</a></div>
+        <div class="home"><a href="#contactUs">Contact</a></div>
+      </section>
+    </nav>
+    <section
+      class="flex flex-col items-center space-y-12 mcontainer"
+      id="first"
+    >
+      <div class="flex">
+        <div class="md:text-6xl text-4xl" id="arrList">My name is</div>
+        <div class="line h-12 md:h-16"></div>
+      </div>
+      <div class="flex space-x-3">
+        <button
+          class="
+            bg-black
+            text-white
+            transition
+            duration-500
+            ease-in-out
+            py-3
+            px-8
+            rounded-lg
+            hover:bg-white
+            hover:text-black
+            text-lg
+          "
+        >
+          <a href="#aboutUs">About Us</a>
+        </button>
+        <button
+          class="
+            bg-white
+            text-black
+            transition
+            duration-500
+            ease-in-out
+            py-3
+            px-6
+            text-lg
+            rounded-lg
+            hover:bg-black
+            hover:text-white
+          "
+        >
+          Contact Now
+        </button>
+      </div>
+    </section>
+    <!-- part 2 -->
+    <section
+      class="lg:px-24 md:px-20 px-6 bg-gray-100 shadow-lg p-6"
+      id="aboutUs"
+    >
+      <div class="md:mb-24 mb-6">.</div>
+      <div class="md:text-4xl text-2xl text-center">About Us</div>
+      <div class="bg-red-500 h-1 w-52 m-auto mt-1 md:mb-16 mb-6"></div>
+      <!-- for image and contentt -->
+      <div class="md:flex space-x-7 imageAnimation">
+        <div class="md:w-2/5">
+          <img src="/img/biraj2.jpg" height="50px" alt="" />
+        </div>
+        <!-- for biocontent -->
+        <div class="flex-1 md:space-y-7 space-y-3 mt-4 contentAnimation">
+          <div class=" lg:text-5xl text-4xl md:text-justify text-blue-500 lg:ml-48">
+            I am Biraj Chhetri
+          </div>
+          <div class="font-light text-lg text-justify pr-10 md:pr-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </div>
+          <!-- nested grid-container -->
+          <div
+            class="sm:grid grid-cols-2 gap-4 lg:text-lg space-y-4 md:space-y-0"
+          >
+            <div class="">
+              <span class="font-bold text-xl">Name:</span>Biraj Chhetri
+            </div>
+            <div>
+              <span class="font-bold lg:text-xl">Email:</span
+              >PoudelBiraj2@gmail.com
+            </div>
+            <div>
+              <span class="font-bold lg:text-xl">Adress:</span>Bharatpur Nepal
+            </div>
+            <div>
+              <span class="font-bold lg:text-xl">Number:</span>9861983060
+            </div>
+            <div>
+              <span class="font-bold lg:text-xl">Nationality:</span>Nepali
+            </div>
+            <div>
+              <span class="font-bold lg:text-xl">Work:</span>Web Developer
+            </div>
+            <div>
+              <span class="font-bold lg:text-xl">Freelanace:</span>Avilabale
+            </div>
+            <div>
+              <span class="font-bold lg:text-xl">Webiste:</span>WWW.exmaple.com
+            </div>
+            <div class="flex flex-col space-y-6 md:space-y-8 ">
+              <div class="lg:ml-60 w-full lg:mt-8 mt-4">
+                <button
+                  class="
+                    bg-blue-500
+                    text-white
+                    transition
+                    duration-500
+                    ease-in-out
+                    
+                    
+                    
+                    py-3
+                    px-6
+                    md:text-lg
+                    rounded-lg
+                    hover:bg-red-400
+                    hover:text-white
+                  "
+                >
+                  Download CV
+                </button>
+              </div>
+              <!-- <div class="flex space-x-4 mb-6 text-2xl">
+                <div class="icons"><i class="fab fa-facebook"></i></div>
+                <div class="icons"><i class="fab fa-google"></i></div>
+                <div class="icons"><i class="fab fa-twitter"></i></div>
+                <div class="icons"><i class="fab fa-linkedin"></i></div>
+                <div class="icons"><i class="fab fa-youtube"></i></div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- for services -->
+    <section
+      class="lg:px-24 md:px-20 px-6 bg-gray-100 shadow-xl p-6"
+      id="services"
+    >
+      <div class="md:mb-24 mb-6">.</div>
+      <div class="md:text-4xl text-2xl text-center">My Services</div>
+      <div class="bg-red-500 h-1 w-52 m-auto mt-1 md:mb-16 mb-6"></div>
+      <!-- for grid containerr -->
+      <div
+        class="
+          lg:grid lg:grid-cols-3
+          lg:gap-10
+          md:grid md:grid-cols-2
+          md:gap-8
+          gContainer
+          space-y-6
+          lg:space-y-0
+          text-center
+          mt-12
+        "
+      >
+        <!-- for first gridd -->
+        <div
+          class="
+            space-y-6
+            bg-gray-100
+            p-4
+            shadow-2xl
+            cursor-pointer
+            upEffects
+            rounded-xl
+          "
+        >
+          <div class="flex space-x-4">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-10 w-10 text-red-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
+                />
+              </svg>
+            </div>
+            <div class="text-3xl">UI/UX Design</div>
+          </div>
+          <div class="text-justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nam
+            dicta doloribus quisquam quae, harum inventore debitis culpa omnis
+            dolore.
+          </div>
+          <div class="">Read More</div>
+        </div>
+        <div
+          class="
+            space-y-6
+            bg-gray-100
+            p-4
+            shadow-2xl
+            cursor-pointer
+            upEffects
+            rounded-xl
+          "
+        >
+          <div class="flex space-x-4">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-10 w-10 text-red-500"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <div class="text-3xl">Web Design</div>
+          </div>
+          <div class="text-justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nam
+            dicta doloribus quisquam quae, harum inventore debitis culpa omnis
+            dolore.
+          </div>
+          <div class="">Read More</div>
+        </div>
+        <div
+          class="
+            space-y-6
+            bg-gray-100
+            p-4
+            shadow-2xl
+            cursor-pointer
+            upEffects
+            rounded-xl
+          "
+        >
+          <div class="flex space-x-4">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-10 w-10 text-red-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
+                />
+              </svg>
+            </div>
+            <div class="text-3xl">Deveopment</div>
+          </div>
+          <div class="text-justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nam
+            dicta doloribus quisquam quae, harum inventore debitis culpa omnis
+            dolore.
+          </div>
+          <div class="">Read More</div>
+        </div>
+        <div
+          class="
+            space-y-6
+            bg-gray-100
+            p-4
+            shadow-2xl
+            cursor-pointer
+            upEffects
+            rounded-xl
+          "
+        >
+          <div class="flex space-x-4">
+            <div class="text-3xl text-red-500">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <div class="text-3xl">App Design</div>
+          </div>
+          <div class="text-justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nam
+            dicta doloribus quisquam quae, harum inventore debitis culpa omnis
+            dolore.
+          </div>
+          <div class="">Read More</div>
+        </div>
+        <div
+          class="
+            space-y-6
+            bg-gray-100
+            p-4
+            shadow-2xl
+            cursor-pointer
+            upEffects
+            rounded-xl
+          "
+        >
+          <div class="flex space-x-4">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-10 w-10 text-red-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+                />
+              </svg>
+            </div>
+            <div class="text-3xl">Creative Design</div>
+          </div>
+          <div class="text-justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nam
+            dicta doloribus quisquam quae, harum inventore debitis culpa omnis
+            dolore.
+          </div>
+          <div class="">Read More</div>
+        </div>
+        <div
+          class="
+            space-y-6
+            bg-gray-100
+            p-4
+            shadow-2xl
+            cursor-pointer
+            upEffects
+            rounded-xl
+          "
+        >
+          <div class="flex space-x-4">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-10 w-10 text-red-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+            </div>
+            <div class="text-3xl">Customization</div>
+          </div>
+          <div class="text-justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nam
+            dicta doloribus quisquam quae, harum inventore debitis culpa omnis
+            dolore.
+          </div>
+          <div class="">Read More</div>
+        </div>
+      </div>
+    </section>
+    <!-- what client say -->
+    <section id="testominal" class="px-8">
+      <div class="mb-28">.</div>
+      <div class="md:text-4xl text-2xl text-center">Client Say</div>
+      <div class="bg-red-500 h-1 w-52 m-auto mt-1 md:mb-12 mb-6"></div>
+      <div
+        class="bg-gray-100 shadow-xl p-6 md:w-1/2 m-auto toggle1 px-6"
+        id="animate"
+      >
+        <div class="space-y-3 flex flex-col items-center justify-center" id="">
+          <div class="w-full">
+            <img
+              src="https://source.unsplash.com/random/people"
+              class="img"
+              alt=""
+            />
+          </div>
+          <div class="flex space-x-1 justify-center">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 text-red-500"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+            </div>
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 text-red-500"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+            </div>
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 text-red-500"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="text-justify text-lg font-light" id="comments">
+            <!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi nihil
+          quidem perferendis quos vitae fugiat commodi deleniti minima
+          repellendus autem! -->
+          </div>
+          <div class="text-xl font-extrabold" id="authorName"></div>
+          <div class="text-lg" id="work"></div>
+        </div>
+      </div>
+      <div class="flex items-center justify-center mt-4 space-x-2">
+        <div class="round" id="prev-btn"></div>
+        <div class="round" id="next-btn"></div>
+      </div>
+    </section>
+    <!-- for blog -->
+    <section id="blog">
+      <div class="md:mb-24 mb-6">.</div>
+      <div class="md:text-4xl text-2xl text-center">Latest Blog</div>
+      <div class="bg-red-500 h-1 w-52 m-auto mt-1 md:mb-16 mb-6"></div>
+      <!-- for imageContainer -->
+      <div
+        class="
+          lg:grid lg:grid-cols-3
+          md:grid md:grid-cols-2
+          md:px-16
+          px-12
+          gap-6
+          lg:gap-12
+        "
+      >
+        <!-- for first griddd -->
+        <div class="cursor-pointer">
+          <!-- for imageee -->
+          <div class="overflow-hidden object-coverr point">
+            <img src="../img/dev2.webp" alt="" />
+          </div>
+          <!-- for white background -->
+          <div class="bg-gray-100 space-y-1 px-4 white">
+            <!-- for titlee -->
+            <div class="text-2xl font-bold pt-6">Best Word Press Theme</div>
+            <!-- for comment and some textt -->
+            <div class="flex justify-between">
+              <div class="font-light">
+                By
+                <span style="font-weight: bolder; margin-right: 4px; color: red"
+                  >Apex</span
+                >on Jan 21,2019
+              </div>
+              <div class="flex">
+                <span
+                  ><svg
+                    class="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+                    ></path></svg></span
+                ><span>22</span>
+              </div>
+            </div>
+            <!-- for some textrt -->
+            <div class="font-extralight text-justify">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptas, aliquam dicta nesciunt beatae totam nulla.
+            </div>
+            <!-- for readMOre -->
+            <div class="font-light text-xl">Read More</div>
+          </div>
+        </div>
+        <div class="cursor-pointer">
+          <!-- for imageee -->
+          <div class="overflow-hidden h-60 object-coverr point">
+            <img src="../img/dev3.webp" alt="" />
+          </div>
+          <!-- for white background -->
+          <div class="bg-gray-100 space-y-1 px-4 white">
+            <!-- for titlee -->
+            <div class="text-2xl font-bold pt-6">Best Word Press Theme</div>
+            <!-- for comment and some textt -->
+            <div class="flex justify-between">
+              <div class="font-light">
+                By
+                <span style="font-weight: bolder; margin-right: 4px; color: red"
+                  >Mandy</span
+                >on Jan 21,2019
+              </div>
+              <div class="flex">
+                <span
+                  ><svg
+                    class="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+                    ></path></svg></span
+                ><span>22</span>
+              </div>
+            </div>
+            <!-- for some textrt -->
+            <div class="font-extralight text-justify">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptas, aliquam dicta nesciunt beatae totam nulla.
+            </div>
+            <!-- for readMOre -->
+            <div class="font-light text-xl">Read More</div>
+          </div>
+        </div>
+        <div class="cursor-pointer">
+          <!-- for imageee -->
+          <div class="overflow-hidden h-60 object-coverr point">
+            <img src="../img/dev4.jpeg" alt="" />
+          </div>
+          <!-- for white background -->
+          <div class="bg-gray-100 space-y-1 px-4 white white">
+            <!-- for titlee -->
+            <div class="text-2xl font-bold pt-6">Best Word Press Theme</div>
+            <!-- for comment and some textt -->
+            <div class="flex justify-between">
+              <div class="font-light">
+                By
+                <span style="font-weight: bolder; margin-right: 4px; color: red"
+                  >Mandy</span
+                >on Jan 21,2019
+              </div>
+              <div class="flex">
+                <span
+                  ><svg
+                    class="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+                    ></path></svg></span
+                ><span>22</span>
+              </div>
+            </div>
+            <!-- for some textrt -->
+            <div class="font-extralight text-justify">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptas, aliquam dicta nesciunt beatae totam nulla.
+            </div>
+            <!-- for readMOre -->
+            <div class="font-light text-xl">Read More</div>
+          </div>
+        </div>
+        <div class="cursor-pointer">
+          <!-- for imageee -->
+          <div class="overflow-hidden h-60 object-coverr point">
+            <img src="../img/dev5.webp" alt="" />
+          </div>
+          <!-- for white background -->
+          <div class="bg-gray-100 space-y-1 px-4 white">
+            <!-- for titlee -->
+            <div class="text-2xl font-bold pt-6">Best Word Press Theme</div>
+            <!-- for comment and some textt -->
+            <div class="flex justify-between">
+              <div class="font-light">
+                By
+                <span style="font-weight: bolder; margin-right: 4px; color: red"
+                  >Mandy</span
+                >on Jan 21,2019
+              </div>
+              <div class="flex">
+                <span
+                  ><svg
+                    class="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+                    ></path></svg></span
+                ><span>22</span>
+              </div>
+            </div>
+            <!-- for some textrt -->
+            <div class="font-extralight text-justify">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptas, aliquam dicta nesciunt beatae totam nulla.
+            </div>
+            <!-- for readMOre -->
+            <div class="font-light text-xl">Read More</div>
+          </div>
+        </div>
+        <div class="cursor-pointer">
+          <!-- for imageee -->
+          <div class="overflow-hidden h-60 object-coverr point">
+            <img src="../img/dev6.webp" alt="" />
+          </div>
+          <!-- for white background -->
+          <div class="bg-gray-100 space-y-1 px-4 white">
+            <!-- for titlee -->
+            <div class="text-2xl font-bold pt-6">Best Word Press Theme</div>
+            <!-- for comment and some textt -->
+            <div class="flex justify-between">
+              <div class="font-light">
+                By
+                <span style="font-weight: bolder; margin-right: 4px; color: red"
+                  >Mandy</span
+                >on Jan 21,2019
+              </div>
+              <div class="flex">
+                <span
+                  ><svg
+                    class="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+                    ></path></svg></span
+                ><span>22</span>
+              </div>
+            </div>
+            <!-- for some textrt -->
+            <div class="font-extralight text-justify">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptas, aliquam dicta nesciunt beatae totam nulla.
+            </div>
+            <!-- for readMOre -->
+            <div class="font-light text-xl">Read More</div>
+          </div>
+        </div>
+        <div class="cursor-pointer">
+          <!-- for imageee -->
+          <div class="overflow-hidden h-60 object-coverr point">
+            <img src="../img/dev7.jpeg" alt="" />
+          </div>
+          <!-- for white background -->
+          <div class="bg-gray-100 space-y-1 px-4 white">
+            <!-- for titlee -->
+            <div class="text-2xl font-bold pt-6">Best Word Press Theme</div>
+            <!-- for comment and some textt -->
+            <div class="flex justify-between">
+              <div class="font-light">
+                By
+                <span style="font-weight: bolder; margin-right: 4px; color: red"
+                  >Biraj</span
+                >on Jan 21,2019
+              </div>
+              <div class="flex">
+                <span
+                  ><svg
+                    class="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+                    ></path></svg></span
+                ><span>22</span>
+              </div>
+            </div>
+            <!-- for some textrt -->
+            <div class="font-extralight text-justify">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptas, aliquam dicta nesciunt beatae totam nulla.
+            </div>
+            <!-- for readMOre -->
+            <div class="font-light text-xl">Read More</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- for contact ko -->
+    <section id="contactUs">
+      <div class="mb-28">.</div>
+      <div class="md:text-4xl text-2xl text-center">Get in Touch</div>
+      <div class="bg-red-500 h-1 w-52 m-auto mt-1 md:mb-12 mb-6"></div>
+      <div class="space-y-6">
+        <div class="text-center">
+          <input
+            class="border border-gray-400 outline-none bg-gray-100 p-2"
+            
+            type="text"
+            name=""
+            id=""
+            placeholder="Your Name"
+          />
+        </div>
+        
+          <div class="text-center">
+            <input id="email"
+              class="border border-gray-400 outline-none bg-gray-100 p-1 "
+              size="32"
+              type="text"
+              name=""
+              id=""
+              placeholder="Your Email"
+            />
+          </div>
+          <div class="text-center">
+            <input
+              class="border border-gray-400 outline-none bg-gray-100 p-1 "
+              size="32"
+             type="text"
+              name=""
+              id=""
+              placeholder="Subject"
+            />
+          </div>
+      
+        <div class="text-center">
+          <textarea
+            class="border border-gray-400 outline-none p-2 bg-gray-100 w-1/2"
+            name=""
+            id=""
+            type="text"
+           
+            placeholder="Enter Your Message "
+          ></textarea>
+        </div>
+        <div class="text-center">
+          <button
+            class="
+              bg-red-500
+              text-white
+              transition
+              duration-500
+              ease-in-out
+              py-3
+              px-6
+              rounded-lg
+              hover:bg-gray-400
+              hover:text-white
+              text-lg
+            "
+          >
+            <a href="#">Submit</a>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
